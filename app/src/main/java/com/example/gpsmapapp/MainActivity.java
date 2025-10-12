@@ -32,14 +32,15 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        // Botón para mostrar la ubicación actual
+        // Botón para mostrar la ubicación actual (En emulador sera simulado entonces puede aparecer en el mar o en estados unidos.
+        // si lo ejecuta en su dispositivo fisico le mostrara su ubicacion actual, en mi caso fue en mi domicilio.
         buttonMostrarUbicacion = findViewById(R.id.button);
         buttonMostrarUbicacion.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, map.class);
             startActivity(intent);
         });
 
-        // Botón para mostrar el mapa con ubicación predefinida
+        // Botón para mostrar el mapa con ubicación predefinida (Santo Tomas)
         buttonGoogleMap = findViewById(R.id.button2);
         buttonGoogleMap.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, MapaLugar.class);
@@ -51,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         imageView = findViewById(R.id.imageView);
 
         buttonDescargarImagen.setOnClickListener(v -> {
-            String urlImagen = "https://i.imgur.com/8iI8rbA.png"; // Cambia por tu URL
+            String urlImagen = "https://i.imgur.com/8iI8rbA.png";
 
             // Hilo secundario para descargar la imagen
             new Thread(() -> {
@@ -59,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                     java.net.URL url = new java.net.URL(urlImagen);
                     final Bitmap bitmap = BitmapFactory.decodeStream(url.openConnection().getInputStream());
 
-                    // Actualizar ImageView en el hilo principal
+                    // Actualiza la ImageView en el hilo principal
                     runOnUiThread(() -> imageView.setImageBitmap(bitmap));
 
                 } catch (Exception e) {
