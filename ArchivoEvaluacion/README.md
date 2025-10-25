@@ -27,3 +27,8 @@ Aplicacion de Android que muestra Ubicacion en tiempo real mediante Google Maps,
 2. Abrir el Proyecto en la App AndroidStudio.
 3. Verificar que el 'debuggable' este desactivado.
 4. Compilar con un certificado de release.
+
+
+## Link Reporte PDF ModSF
+- Al subir el pdf al repositorio GitHub presenta error al momento de verlo o descargarlo asi que decidi por subirlo a una carpeta de onedrive. Adjunto el Link
+https://alumnossantotomas-my.sharepoint.com/:f:/g/personal/r_quevedo2_alumnos_santotomas_cl/ErDPpOI30HVHlBTetCWXI7gB4ID4xPe9q3lutucNuX9qEg?e=lmXRrc
