@@ -2,8 +2,11 @@
 
 ## 1. Certificado de Depuracion
 **Descripcion:** La Aplicacion esta firmada con un certificado de depuracion, lo cual nos indica que no esta lista para la distribucion en entornos productivos.
+
 **Riesgo:** Alta. Permite modificar el APK o falsificar las versiones.
+
 **Evidencia:** Reporte Estatico - Seccion "App Signing" Muestra firma con certificado de desarrollo.
+
 **Solucion:** Firmar la app con un certificado de produccion antes de su publicacion. Tambien Generar un Keystore seguro y configurar el proceso de la firma en 'build.gradle' para versiones.
 
 ## 2. Modo debug Habilitado
