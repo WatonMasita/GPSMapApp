@@ -1,7 +1,8 @@
 # GPSMapApp - Analisis de Seguridad (MobSF)
 
 ## Descripcion
-Aplicacion de Android que muestra Ubicacion en tiempo real mediante Google Maps, evaluada con MobSF.
+Aplicacion de Android que muestra Ubicacion en tiempo real mediante Google Maps, evaluada con **MobSF (Mobile Security Framework)** utilizando **Analisis tanto estatico como el dinamico**
+El analisis estatico nos permitio poder identificar las vulnerabilidades de configuracion y claves expuestas, mientras que el analisis dinamico nos confirma el comportamiento de la app en estado de ejecucion, monitoreando el trafico de red, permisos y ejecucion en un emulador rooteado.
 
 ## Vulnerabilidades Identificadas
 - App firmada con certificado de depuracion.
@@ -32,3 +33,4 @@ Aplicacion de Android que muestra Ubicacion en tiempo real mediante Google Maps,
 ## Link Reporte PDF ModSF
 - Al subir el pdf al repositorio GitHub presenta error al momento de verlo o descargarlo asi que decidi por subirlo a una carpeta de onedrive. Adjunto el Link
 https://alumnossantotomas-my.sharepoint.com/:f:/g/personal/r_quevedo2_alumnos_santotomas_cl/ErDPpOI30HVHlBTetCWXI7gB4ID4xPe9q3lutucNuX9qEg?e=lmXRrc
+
